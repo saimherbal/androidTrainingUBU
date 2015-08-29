@@ -1,0 +1,113 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="6dp">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name : " />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName" />
+
+    <TextView
+        android:id="@+id/txtGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Gender : "
+        android:layout_below="@id/edtName"
+
+        />
+
+    <RadioGroup
+        android:id="@+id/radG1"
+        android:layout_below="@+id/edtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtGender"
+
+        >
+
+        <RadioButton
+            android:id="@+id/radB1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="male"
+            />
+        <RadioButton
+            android:id="@+id/radB2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="female"
+            />
+    </RadioGroup>
+
+    <View
+        android:layout_below="@+id/radG1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ff4348" />
+
+    <TextView
+        android:id="@+id/txtfavo"
+        android:layout_below="@+id/radG1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorite : "
+        />
+    <CheckBox
+        android:id="@+id/chSport"
+        android:layout_toRightOf="@+id/txtfavo"
+        android:layout_below="@+id/radG1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sport"
+        />
+    <CheckBox
+        android:id="@+id/chMusic"
+        android:layout_toRightOf="@+id/chSport"
+        android:layout_below="@+id/radG1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="music"
+        />
+    <CheckBox
+        android:id="@+id/chMuvie"
+        android:layout_toRightOf="@+id/chMusic"
+        android:layout_below="@+id/radG1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="muvie"
+
+
+        />
+
+    <TextView
+        android:id="@+id/txtComment"
+        android:layout_below="@+id/chMuvie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comment : "
+        />
+    <EditText
+        android:id="@+id/edtComment"
+        android:layout_below="@+id/chMuvie"
+        android:layout_toRightOf="@+id/txtComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_below="@+id/edtComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="add"
+        />
+</RelativeLayout>
